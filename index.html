@@ -8,22 +8,24 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bonbon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: url(https://i.pinimg.com/736x/a7/18/02/a7180260fecadc84f1c31d7734674d9b.jpg);
+            background: url(https://culturalcenter.gov.ph/wp-content/uploads/2021/08/Tanghalang-Aurelio-Tolentino.jpg);
             background-size: cover;
         }
 
         h1 {
             margin-top: 80px;
             text-align: center;
-            font-family: Bonbon;
+            font-family: "Akaya Kanadaka";
             font-size: 50px; 
             font-weight: bold;
+            background-color: rgb(166, 193, 222);
         }
 
         form {
@@ -37,29 +39,41 @@
         border-radius: 10px;
         align-items: center;
         text-align: center;
-        font-family: Andika;
-        background-color: rgb(245, 175, 203);
-        width: 100%;
+        font-family: "Andika";
+        background-color: rgba(166, 193, 222, 0.766);
         }
 
+        .col {
+        align-items: center;
+        text-align: center;
+        }
     </style>
 </head>
 <body>
+    <h1>🎭 Teatro't Talento: Ang Mga Bagong Miyembro! 🎭</h1>
     <div class="container">
         <div class="row">
-            <div class="container text-center">
-            <h1>Teatro Pilipno: Ang Mga Bagong Miyembro! 🎭</h1>
-            <form action="">
-                <input type="text" id="fname" class="form-control" placeholder="First Name (Ex: Ysabel)" required>
+            <div class="col-lg-12">
+            <form actions="">
+                <label for ="">Ilagay ang iyong pangalan sa baba:</label>
+                <input type="text" id="fname" class="form-control" placeholder="First Name (Hal: Ysabel)">
                 <br>
-                <input type="text" id="lname" class="form-control" placeholder="Last Name (Ex: Valerio)" required>
+                <input type="text" id="lname" class="form-control" placeholder="Last Name (Hal: Valerio)">
                 <br>
                 <br>
-                <button type="button" class="btn btn-warning" py-click="bagongM">Tignan natin!</button>
-            </form>
-            <br>
+                <button type="button" id="btn" class="btn btn-danger" py-click="bagongM">Tignan natin!</button>
 
-    <div id="output1"></div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-12" id="output1">
+                <label for ="">Ang listahan:</label>
+            
+            </div>
+        </div>
+    </div>
     <script type="py" src="main.py"></script>
 </body>
 </html>
