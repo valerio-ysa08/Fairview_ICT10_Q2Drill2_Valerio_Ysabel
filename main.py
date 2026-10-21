@@ -12,7 +12,10 @@ def bagongM (e):
     lname = document.getElementById("lname").value
 
     # Assigns the value to set variables
-    new_member = {fname + " " + lname}
+
+    input_member = fname + " " + lname
+
+    new_member = {input_member}
 
     all_members = group1 | group2 | group3 | group4 | new_member
 
